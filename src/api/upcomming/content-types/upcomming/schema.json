@@ -1,0 +1,58 @@
+{
+  "kind": "singleType",
+  "collectionName": "upcommings",
+  "info": {
+    "singularName": "upcomming",
+    "pluralName": "upcommings",
+    "displayName": "Upcomming",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title_ar": {
+      "type": "string",
+      "required": true
+    },
+    "describtion_ar": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "time": {
+      "type": "time"
+    },
+    "insta_url": {
+      "type": "string"
+    },
+    "facebook_url": {
+      "type": "string"
+    },
+    "title_en": {
+      "type": "string",
+      "required": true
+    },
+    "describtion_en": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::city.city"
+    }
+  }
+}
